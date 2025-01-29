@@ -1,0 +1,323 @@
+/*************Responsive Styles*****************/
+/***************iPhone Portrait**************/
+@media only screen and (max-width: 479px) and (min-width: 320px) {}
+
+/**********************iPhone Landscape*************/
+@media only screen and (max-width: 767px) and (min-width: 480px) {}
+
+/*************************iPad Portrait***************/
+@media only screen and (max-width: 985px) and (min-width: 768px) {
+    .layout-sec .right-layer p {
+        padding-top: 0;
+    }
+
+    .layout-sec .right-layer::before {
+        top: 65px !important;
+    }
+}
+
+/**************iPad Landscape***************/
+@media only screen and (max-width: 1180px) and (min-width: 986px) {
+    .layout-sec .right-layer::before {
+        width: 604px;
+        right: -52px;
+    }
+
+    .highlight-sec .text-group {
+        top: 100px;
+    }
+
+    .video-sec .video-col .video-js {
+        min-height: 400px;
+        height: 400px;
+    }
+    
+}
+
+/*******************************************/
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+
+    .layout-sec .right-layer::before {
+        width: 47.857vw;
+        height: 68.571vw;
+        content: '';
+        right: -1.857vw;
+        top: -5.286vw;
+    }
+
+    .layout-sec .right-layer p {
+        width: 28.571vw;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    header .register-btn a {
+        display: none;
+    }
+
+    header {
+        height: 150px;
+    }
+
+    .banner-sec .banner-txt {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-sec {
+        padding-top: 80px;
+    }
+
+    .banner-sec h3 {
+        padding-top: 0;
+        font-size: 27px;
+        padding-bottom: 70px;
+    }
+
+    .mobile-primary {
+        display: block;
+    }
+
+    .register-btn a {
+        font-size: 10.22px;
+        line-height: 12.27px;
+        padding: 20px 40px;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .primary-btn {
+        font-size: 10.22px;
+        line-height: 12.27px;
+        padding: 16px 42px;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .event-row {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+
+    .event-row .event-det p {
+        font-size: 10.15px;
+        line-height: 12.19px;
+
+    }
+
+    .event-row .event-det img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+
+    .event-row .row {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    h2 {
+        font-size: 27px;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+
+    }
+
+    .layout-sec p.para {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 23px;
+        padding-top: 20px;
+    }
+
+    .layout-sec .row {
+        padding-top: 95px;
+    }
+
+    .layout-sec .right-layer::before {
+        width: 90%;
+        height: 500px;
+        top: 0;
+        bottom: 0;
+        right: 30px;
+    }
+
+    .layout-sec .right-layer {
+        margin-top: 25px;
+    }
+
+    .layout-sec .right-layer p {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 17.01px;
+        width: 60%;
+        margin: auto;
+
+    }
+
+    .layout-sec .right-layer::after {
+        width: 50px;
+        height: 70px;
+        height: 70px;
+        top: 0;
+        left: 0;
+    }
+
+    .video-sec .video-col .video-js {
+        min-height: 200px;
+        height: 200px;
+    }
+
+    p{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+
+    }
+
+    .video-sec .para-col::before {
+        width: 78px;
+        height: 53px;
+        top: unset;
+        bottom: 0;
+    }
+
+    .video-sec {
+        padding-bottom: 60px;
+    }
+
+    .slider-sec {
+        padding: 30px 0;
+    }
+
+    .slider-sec .glimpse-single img {
+        height: 160px;
+    }
+
+    .slider-sec .glimpse-single.slick-center img {
+        height: 200px;
+    }
+
+    .slider-sec .slick-dots {
+        padding-top: 20px;
+    }
+
+    .slider-sec .slick-dots li {
+        width: 5px;
+        height: 5px;
+    }
+
+    .slider-sec .slick-dots li.slick-active {
+        width: 20px;
+    }
+
+    .highlight-sec .text-group img {
+        display: none;
+    }
+
+    .highlight-sec {
+        padding-top: 70px;
+        padding-bottom: 152px;
+        min-height: auto;
+    }
+
+    .text-group-mob {
+        display: block;
+    }
+
+    .text-group-mob img {
+        width: 100%;
+    }
+
+    .agenda-sec .progress-row::after {
+        width: 31px;
+        height: 45px;
+        left: -40px;
+    }
+
+    .agenda-sec .progress-row {
+        margin-left: 40px;
+    }
+
+    .agenda-sec .progress-row .progress-col::after {
+        width: 18px;
+        height: 18px;
+    }
+
+    .agenda-sec .progress-row::before {
+        left: 8px;
+        width: 2px;
+    }
+
+    .agenda-sec .progress-row .progress-col h5, 
+    .agenda-sec .progress-row .progress-col p {
+        font-size: 15px;
+        line-height: 18px;
+
+    }
+
+    .agenda-sec .progress-row .progress-col {
+        padding-bottom: 50px;
+        padding-left: 30px;
+    }
+
+    .agenda-sec .progress-row .qoute-bg {
+        width: 80%;
+    }
+
+    footer {
+        padding-top: 58px;
+    }
+
+    footer form .form-control {
+        margin-bottom: 30px;
+        padding: 18px 15px;
+    }
+
+    footer form label,
+    footer form .form-control::placeholder,
+    footer form select {
+        font-size: 12px;
+        line-height: 14.42px;
+    }
+
+    form .primary-btn {
+        margin: auto;
+        width: fit-content;
+        text-align: center;
+        display: flex;
+    }
+
+    footer form {
+        padding-bottom: 60px;
+    }
+
+    .copyright-content a,
+    footer .social-col p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.92px;
+    }
+
+    footer .copyright-content {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    footer .social-col img {
+        height: 18px;
+    }
+
+    .copyright-content .row {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .social-col {
+        justify-content: center !important;
+        margin-top: 15px;
+    }
+}

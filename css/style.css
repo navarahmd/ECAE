@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+}
+
+:root {
+    --primary-color: #0034AE;
+    --secondary-color: #ADEDEA;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+}
+
+@font-face {
+    font-family: "29lt-bukra";
+    src: url(../fonts/29lt-bukra.ttf);
+}
+
+@font-face {
+    font-family: "29lt-bukra-Light";
+    src: url(../fonts/29lt-bukra-light.ttf);
+}
+
+@font-face {
+    font-family: "29lt-bukra-Medium";
+    src: url(../fonts/29lt-bukra-medium.otf);
+}
+
+@font-face {
+    font-family: "29lt-bukra-Bold";
+    src: url(../fonts/29lt-bukra-bold.ttf);
+}
+
+body {
+    font-family: "29lt-bukra";
+    background-color: var(--primary-color);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--white-color);
+}
+
+h2 {
+    font-family: "29lt-bukra-Medium";
+    font-size: 48px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: var(--secondary-color);
+}
+
+header {
+    padding: 48px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 220px;
+}
+
+.register-btn a{
+    font-family: "29lt-bukra-Medium";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.6px;
+    background-color: var(--secondary-color);
+    padding: 35px 70px;
+    border-radius: 100px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.register-btn {
+    margin-right: 50px;
+}
+
+.banner-sec {
+    background: url('../images/banner-bg.jpeg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 220px;
+}
+
+.banner-sec .banner-txt {
+    min-height: 300px;
+}
+
+.banner-sec h3 {
+    padding-top: 155px;
+    font-size: 44px;
+    font-family: "29lt-bukra-Medium";
+    color: var(--white-color);
+}
+
+.event-row  {
+    padding-top: 290px;
+    background: linear-gradient(180deg, rgba(0, 52, 174, 0) 3.9%, #0034AE 72.29%);
+    padding-bottom: 118px;
+}
+
+.event-row .event-det p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    color: var(--white-color);
+    padding-left: 20px;
+    font-family: "29lt-bukra-Medium";
+}
+
+.layout-sec p.para {
+    font-family: "29lt-bukra-Light";
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 35px;
+    color: var(--white-color);
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.primary-btn{
+    font-family: "29lt-bukra-Medium";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    background-color: var(--secondary-color);
+    padding: 27px 70px;
+    border-radius: 100px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.layout-sec .right-layer {
+    position: relative;
+}
+
+.layout-sec .right-layer::before {
+    position: absolute;
+    width: 670px;
+    height: 960px;
+    content: '';
+    right: 20px;
+    top: -120px;
+    background: url('../images/layer-bg.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.layout-sec .right-layer::after {
+    position: absolute;
+    width: 105px;
+    height: 150px;
+    content: '';
+    left: -35px;
+    top: -130px;
+    background: url('../images/icon-layer-2.svg') no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+}
+
+.layout-sec .right-layer p {
+    font-family: "29lt-bukra-Light";
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 35px;
+    color: var(--white-color);
+    width: 500px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.layout-sec .row {
+    padding-bottom: 250px;
+    padding-top: 130px;
+}
+
+.video-sec .para-col {
+    position: relative;
+}
+
+.video-sec .para-col::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    background: url('../images/double-qoute.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 230px;
+    height: 160px;
+}
+
+.video-sec {
+    /* padding-top: 80px; */
+    padding-bottom: 165px;
+}
+
+.video-sec .video-col .video-js{
+    width: 100%;
+    min-height: 750px;
+    border-radius: 30px;
+    margin-bottom: 35px;
+    /* background: url('../images/layer-bg.png'); */
+}
+
+.video-sec .video-col video {
+    border-radius: 30px;
+}
+
+.slider-sec {
+    background: #064AD2;
+    padding: 140px 0;
+}
+
+.slider-sec .glimpse-row {
+    padding-top: 130px;
+    position: relative;
+    /* padding-bottom: 60px; */
+}
+
+.slider-sec .glimpse-single img {
+    width: 100%;
+    height: 496px;
+    opacity: 30%;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+}
+
+.slider-sec .glimpse-single.slick-center img {
+    opacity: 100%;
+    transform: scale(1.1);
+    height: 632px;
+    position: relative;
+    z-index: 2;
+}
+
+.slider-sec .slick-dots li button {
+    display: none;
+}
+
+.slider-sec .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding-top: 60px;
+}
+
+.slider-sec .slick-track {
+    display: flex;
+    align-items: center;
+}
+
+.slider-sec .slick-dots li {
+    width: 14px;
+    height: 14px;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    opacity: 30%;
+    margin: 0 5px;
+}
+
+.slider-sec .slick-dots li.slick-active {
+    width: 60px;
+    border-radius: 50px;
+    opacity: 100%;
+}
+
+.highlight-sec {
+    padding-top: 135px;
+    padding-bottom: 152px;
+    position: relative;
+    min-height: 900px;
+}
+
+.highlight-sec::before {
+    position: absolute;
+    bottom: 0;
+    left: -250px;
+    content: '';
+    background: url('../images/layer-bg-bt.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-height: 790px;
+    width: 756px;
+}
+
+.highlight-sec .container {
+    position: relative;
+}
+
+.highlight-sec p {
+    width: 470px;
+}
+
+.highlight-sec .header-col {
+    padding-top: 60px;
+}
+
+.highlight-sec .text-group img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.highlight-sec .text-group {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '';
+    width: 70%;
+}
+
+.agenda-sec {
+    background-color: #00236F;
+    padding: 90px 0;
+}
+
+.agenda-sec .progress-row .progress-col h5 {
+    font-size: 22px;
+    font-family: "29lt-bukra-Medium";
+    font-weight: 500;
+    line-height: 27px;
+    color: var(--secondary-color);
+}
+
+.agenda-sec .progress-row .progress-col p{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+.agenda-sec .progress-row .progress-col p span {
+    font-family: "29lt-bukra-Medium";
+    font-weight: 500;
+}
+
+.agenda-sec .progress-row {
+    margin-top: 60px;
+    position: relative;
+    margin-left: 220px;
+}
+
+.agenda-sec .progress-row .qoute-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.agenda-sec .progress-row .qoute-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 6px;
+    content: '';
+    width: 40%;
+    height: fit-content;
+}
+
+.agenda-sec .progress-row::before {
+    position: absolute;
+    left: 22px;
+    top: 0;
+    height: 100%;
+    width: 6px;
+    content: '';
+    background-color: #8AAAF5;
+    z-index: 0;
+    border-radius: 6px;
+}
+
+.agenda-sec .progress-row::after {
+    position: absolute;
+    left: -110px;
+    top: 0;
+    height: 125px;
+    width: 85px;
+    content: '';
+    background: url('../images/qoute-single.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.agenda-sec .progress-row .progress-col {
+    padding-bottom: 115px;
+    position: relative;
+    padding-left: 60px;
+    padding-top: 15px;
+}
+
+.agenda-sec .progress-row .progress-col:last-child {
+    padding-bottom: 10px;
+}
+
+.agenda-sec .progress-row .progress-col::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    background-color: var(--secondary-color);
+}
+
+footer {
+    padding-top: 130px;
+}
+
+footer form label {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.44px;
+    color: var(--white-color);
+    padding-bottom: 14px;
+}
+
+footer form {
+    padding-bottom: 90px;
+    padding-top: 80px;
+}
+
+footer form .form-control {
+    background-color: rgb(240 240 234 / 75%);;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 20px 30px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+}
+
+footer form .form-control::placeholder {
+    color: #7C7C7A;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24.38px;
+}
+
+footer hr.divider {
+    border: 1px solid #FFFFFF;
+    background-color: var(--white-color);
+    opacity: 1;
+}
+
+footer .copyright-content {
+    padding-top: 72px;
+    padding-bottom: 90px;
+}
+
+footer .social-col img {
+    height: 40px;
+    margin-left: 15px
+}
+
+footer .social-col p {
+    font-size: 22.12px;
+    font-weight: 400;
+    line-height: 30.97px;
+}
+
+.copyright-content a {
+    font-size: 22.12px;
+    font-weight: 400;
+    line-height: 30.97px;
+    color: var(--white-color);
+}
+
+select {
+    -webkit-appearance: none;
+    background: black;
+    border: none;
+    border-radius: 0;
+    color: white;
+  }
+  
+  select::after {
+    content: " ";
+    display: inline-block;
+    width: 24px; height: 24px;
+    background: blue;
+  }
+
+  .mobile-primary,
+  .text-group-mob {
+    display: none;
+  }
+
+  select {
+    cursor: pointer;
+  }
+
+  .event-row .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
